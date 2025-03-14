@@ -1,0 +1,17 @@
+[general]
+snapshot_interval = 24 # hours
+
+[api]
+port = "8080"
+
+[node]
+service_name = "milkyway.service"
+node_home = "/home/ubuntu/.milkyway"
+rpc = ""
+is_wasm = true
+
+[aws]
+access_key_id = ""
+secret_access_key = ""
+region = ""
+bucket = ""
