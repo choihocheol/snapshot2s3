@@ -34,5 +34,5 @@ cp config.toml.example config.toml
 3. Run
 
 ```bash
-./snapshot2s3
+./snapshot2s3 -config config.toml
 ```
