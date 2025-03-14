@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"flag"
 	"os"
 	"time"
 
@@ -14,7 +15,13 @@ import (
 func main() {
 	ctx := context.Background()
 
-	f, err := os.ReadFile("config.toml")
+	cfgPath := flag.String("config", "", "Config file")
+    flag.Parse()
+	if *cfgPath == "" {
+		panic("Error: Please input config file path with -config flag.")
+	}
+
+	f, err := os.ReadFile(*cfgPath)
 	if err != nil {
 		logger.Error(err)
 		return
