@@ -19,17 +19,18 @@ This is a tool to generate a snapshot and upload snapshot and addrbook to S3 per
     - `/snapshot/status`: Get snapshot status related with `/snapshot` link.
         ```json
         {
-          "redirect_url": "https://milkyway-mainnet-services.s3.us-west-1.amazonaws.com/snapshot_1565264.tar.lz4",
-          "height": 1565264,
-          "time": "2025-03-14T08:30:49.658703358Z"
+          "redirect_url": "https://your-bucket.s3.your-region.amazonaws.com/snapshot_1234500.tar.lz4",
+          "height": 1234500,
+          "time": "2025-01-01T00:00:00.000000000Z"
         }
         ```
     - `/addrbook`: Redirect to latest `addrbook.json` URL.
     - `/addrbook/status`: Get `addrbook.json` status related with `/addrbook` link.
         ```json
         {
-          "redirect_url": "https://milkyway-mainnet-services.s3.us-west-1.amazonaws.com/addrbook.json",
-          "time": "2025-03-14T08:30:49.658703358Z"
+          "redirect_url": "https://your-bucket.s3.your-region.amazonaws.com/addrbook.json",
+          "height": 1234500,
+          "time": "2025-01-01T00:00:00.000000000Z"
         }
         ```
 
